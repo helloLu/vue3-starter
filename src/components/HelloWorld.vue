@@ -13,6 +13,10 @@ defineProps<{
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       What's next?
     </h3>
+    <br>
+    <h4>
+      <router-link to="/player">前往播放器吧</router-link>
+    </h4>
   </div>
 </template>
 
