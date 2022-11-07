@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { onUnmounted } from 'vue'
+onUnmounted(() => {
+  console.log(2222)
+})
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
