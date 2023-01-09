@@ -15,24 +15,25 @@ const changeTab = (i: number) => {
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div style="margin:100px auto;display: flex;padding:100px">
+    <header>
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="wrapper">
+        <HelloWorld msg="You did it!" />
 
-      <nav>
-        <a :class="{ 'active': activeIndex === 0 }" @click="changeTab(0)">Home</a>
-        <a :class="{ 'active': activeIndex === 1 }" @click="changeTab(1)">About</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <KeepAlive>
-      <component :is="showCom"></component>
-    </KeepAlive>
-  </main>
-
+        <nav>
+          <a :class="{ 'active': activeIndex === 0 }" @click="changeTab(0)">Home</a>
+          <a :class="{ 'active': activeIndex === 1 }" @click="changeTab(1)">About</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <KeepAlive>
+        <component :is="showCom"></component>
+      </KeepAlive>
+    </main>
+  </div>
 </template>
 
 <style scoped>
